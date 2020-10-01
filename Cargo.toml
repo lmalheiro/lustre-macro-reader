@@ -1,9 +1,17 @@
 [package]
 name = "lustre-macro-reader"
 version = "0.1.0"
-authors = ["luismalheiro <luismalheiro@gmail.com>"]
+authors = ["Luis Malheiro <luismalheiro@gmail.com>"]
 edition = "2018"
+keywords = [ "lisp", "macro", "toy-project", "lustre" ]
+description = "Toy project. A macro to embed lisp-like code for the lustre project (another toy project)."
+categories = [ "parsing" ]
+license = "MIT"
+
+[lib]
+proc-macro = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+lustre_lib = { path = "../lustre-lib" }
