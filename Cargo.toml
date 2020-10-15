@@ -14,4 +14,4 @@ proc-macro = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-lustre_lib = { path = "../lustre-lib" }
+lustre_lib = { git = "https://github.com/lmalheiro/lustre-lib.git", branch="master" }
